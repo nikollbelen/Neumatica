@@ -156,19 +156,18 @@ const courseContent = [
                                     .stroke-secondary { stroke: rgb(0, 112, 192); stroke-width: 2; }
                                     .stroke-dark { stroke: rgb(51, 51, 51); stroke-width: 1.5; }
                                     .stroke-thin { stroke: rgb(150, 150, 150); stroke-width: 1; }
-                                    .fill-accent { fill: rgba(0, 112, 192, 0.1); } /* Para resaltar áreas */
+                                    .fill-accent { fill: rgba(0, 112, 192, 0.1); }
 
-                                    /* Styles for highlight overlays */
                                     .highlight-overlay {
-                                        fill: none; /* Initially transparent */
-                                        stroke: none; /* Initially no stroke */
+                                        fill: none;
+                                        stroke: none;
                                         transition: fill 0.3s ease, stroke 0.3s ease, filter 0.3s ease;
                                     }
                                     .highlight-overlay.active-highlight {
-                                        fill: rgba(0, 112, 192, 0.3); /* Semi-transparent fill for highlight */
-                                        stroke: rgb(0, 112, 192); /* Blue border for highlight */
+                                        fill: rgba(0, 112, 192, 0.3);
+                                        stroke: rgb(0, 112, 192);
                                         stroke-width: 4;
-                                        filter: drop-shadow(0 0 8px rgba(0, 112, 192, 0.8)); /* Glow effect */
+                                        filter: drop-shadow(0 0 8px rgba(0, 112, 192, 0.8));
                                     }
                                 </style>
 
@@ -206,7 +205,8 @@ const courseContent = [
                                 <rect id="highlight-tapa-delantera" x="95" y="80" width="20" height="290" rx="10" ry="10" class="highlight-overlay"/>
                                 <rect id="highlight-camisa" x="100" y="100" width="600" height="250" rx="15" ry="15" class="highlight-overlay"/>
                                 <rect id="highlight-junta-vastago" x="90" y="210" width="10" height="30" rx="3" ry="3" class="highlight-overlay"/>
-                                <rect id="highlight-junta-embolo" x="300" y="110" width="40" height="230" rx="8" ry="8" class="highlight-overlay"/> </svg>
+                                <rect id="highlight-junta-embolo" x="300" y="110" width="40" height="230" rx="8" ry="8" class="highlight-overlay"/>
+                            </svg>
                             <div class="hotspot" style="top: 50%; left: 15%;" data-info-id="vastago">1</div>
                             <div class="hotspot" style="top: 45%; left: 45%;" data-info-id="embolo">2</div>
                             <div class="hotspot" style="top: 20%; left: 89%;" data-info-id="tapa-trasera">3</div>
@@ -282,6 +282,23 @@ const courseContent = [
                             <button class="nav-button" onclick="checkCategorizationQuiz('juntas-categorization-quiz')">Verificar Categorías</button>
                             <div class="categorization-feedback" id="feedback-juntas-categorization-quiz"></div>
                         </div>
+                    </div>
+                `
+            }
+        ]
+    },
+    {
+        id: 'simulacion-accion',
+        title: 'Actividades Interactivas',
+        icon: 'fas fa-play-circle',
+        lessons: [
+            {
+                id: 'simulacion-accion-1', // Nueva lección
+                title: 'Adivina el Concepto Neumático',
+                content: `
+                    <div class="content-block">
+                        <h3>Ordena las letras para adivinar el concepto</h3>
+                        
                     </div>
                 `
             }
